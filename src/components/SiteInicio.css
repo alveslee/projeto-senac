@@ -1,22 +1,40 @@
+#root{
+    background-color: #fff;
+}
+
 .menu{
     display: flex;
+    margin-left: 20px;
+    font-size: 30px;
+    width: 500px;
+    height: 100px;
 }
 .menu01-menu{
     position: absolute;
-    box-shadow: 0 0 2px black;
     display: none;
+    margin-top: none;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    font-size: 18px;
+    border-radius: 20px;
+
 }
+
 
 .menu01-menu a{
     display: block;
     color: black;
+    margin-top: 10px;
 }
+
 
 .menu01:hover .menu01-menu{
     display: block;
 }
 
 .logo {
+    display: flex; 
+    align-items: center; 
     background-color: #FFCED6;
     padding: 10px;
     text-align: center;
@@ -28,7 +46,15 @@
 
 .logo img{
     width: 450px;
-    height: 80px;
+    height: auto;
+}
+
+.caixa{
+    margin-left: 50px; 
+    margin-right: 20px; 
+    display: flex; 
+    align-items: center;
+
 }
 
 .caixa input[type="text"] {
@@ -36,9 +62,9 @@
     padding: 5px;
     border: 1px solid #ccc; 
     border-radius: 100px;
-    margin-top: 10px;
-    width: 450px;
-    height: 30px;
+    width: 300px; 
+    height: 25px;
+
 }
 .caixa button {
     padding: 5px 10px;
@@ -243,13 +269,20 @@
 
 .cafea-menu{
     position: absolute;
-    box-shadow: 0 0 2px black;
     display: none;
+    margin-top: none;
+    margin-left: 40px;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    width: 100px;
+    border-radius: 20px;
 }
 
 .cafea-menu a{
     display: block;
     color: black;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .cafea:hover .cafea-menu{
@@ -258,13 +291,21 @@
 
 .almoco-menu{
     position: absolute;
-    box-shadow: 0 0 2px black;
     display: none;
+    margin-top: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    width: 100px;
+    border-radius: 20px;
+
 }
 
 .almoco-menu a{
     display: block;
     color: black;
+    margin-top: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .almoco:hover .almoco-menu{
@@ -272,13 +313,21 @@
 }
 .cafe-tarde-menu{
     position: absolute;
-    box-shadow: 0 0 2px black;
     display: none;
+    margin-top: none;
+    margin-left: 30px;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    width: 100px;
+    border-radius: 20px;
+
 }
 
 .cafe-tarde-menu a{
     display: block;
     color: black;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .cafe-da-tarde:hover .cafe-tarde-menu{
@@ -286,13 +335,22 @@
 }
 .lanche-tarde-menu{
     position: absolute;
-    box-shadow: 0 0 2px black;
     display: none;
+    margin-top: none;
+    margin-left: 40px;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    width: 100px;
+    border-radius: 20px;
+
 }
 
 .lanche-tarde-menu a{
     display: block;
     color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+
 }
 
 .lanche-da-tarde:hover .lanche-tarde-menu{
@@ -300,13 +358,20 @@
 }
 .janta-menu{
     position: absolute;
-    box-shadow: 0 0 2px black;
     display: none;
+    margin-top: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    width: 100px;   
+    border-radius: 20px;
+
 }
 
 .janta-menu a{
     display: block;
     color: black;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .jantar:hover .janta-menu{
@@ -314,13 +379,20 @@
 }
 .doces-menu{
     position: absolute;
-    box-shadow: 0 0 2px black;
     display: none;
+    margin-top: none;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    font-size: 18px;
+    border-radius: 20px;
+
 }
 
 .doces-menu a{
     display: block;
     color: black;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .doces:hover .doces-menu{

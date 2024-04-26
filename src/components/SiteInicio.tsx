@@ -4,17 +4,17 @@ const SiteInicio = () => {
     return (
         <> 
         <div className="logo">
-            <div className="menu">
-                <ul className="menu01">
-                    <li><a href="#">☰</a>
-                        <div className="menu01-menu">
-                            <a href="">Serviço 1</a>
-                            <a href="">Serviço 2</a>
-                            <a href="">Serviço 3</a>
-                    </div>
-                </li>      
-            </ul>
-        </div> 
+                <div className="menu">
+                    <ul className="menu01">
+                        <li><a href="#">☰</a>
+                            <div className="menu01-menu">
+                                <a href="">Serviço 1</a>
+                                <a href="">Serviço 2</a>
+                                <a href="">Serviço 3</a>
+                        </div>
+                    </li>      
+                </ul>
+            </div> 
                 <img src="src/assets/logo.png" alt="logo" />
             <div className='caixa'>
                 <input type="text" />
