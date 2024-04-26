@@ -1,4 +1,3 @@
-//import MyForm from "./MyForm";
 import axios from 'axios';
 import './login.css';
 import { ChangeEvent, useState } from 'react';
@@ -40,12 +39,12 @@ function Login() {
 
   return (
     <div className="container">
-      {/* <form className="login-form" action="#" method="post"> */}
+      <div className="login-form">
         <h2>Login</h2>
         <input onChange={handleUserOnchange} type="text" name="username" placeholder="Usuário" />
         <input onChange={handlePasswordOnChange} type="password" name="password" placeholder="Senha" />
         <input onClick={handleOnclick} type="submit" value="Entrar" />
-      {/* </form> */}
+      </div>
     </div>
   );
 }
