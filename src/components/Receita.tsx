@@ -9,10 +9,12 @@ const RecipePage = () => {
     instrucoes: []
   });
 
+  const [receitaId, setReceitaId] = useState(-1);
+
   useEffect(() => {
-    axios.get('http://localhost:8080/receitas')
+    axios.get(`http://localhost:8080/receitas?id=${receitaId}`)
       .then((res) => {
-        const { titulo, ingredientes, instrucoes } = res.data;
+        const { titulo, ingredientes, instrucoes } = res.data[0]; // Assuming you're getting a single recipe
         setRecipe({ titulo, ingredientes, instrucoes });
       })
       .catch((err) => {
@@ -25,14 +27,14 @@ const RecipePage = () => {
       <h1>{recipe.titulo}</h1>
       <h2>Ingredientes:</h2>
       <ul>
-        {recipe.ingredientes.map((ingredientes, index) => (
-          <li key={index}>{ingredientes}</li>
+        {recipe.ingredientes.map((ingrediente, index) => (
+          <li key={index}>{ingrediente}</li>
         ))}
       </ul>
       <h2>Modo de Preparo:</h2>
       <ol>
-        {recipe.instrucoes.map((instrucoes, index) => (
-          <li key={index}>{instrucoes}</li>
+        {recipe.instrucoes.map((instrucao, index) => (
+          <li key={index}>{instrucao}</li>
         ))}
       </ol>
     </div>

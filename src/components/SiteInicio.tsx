@@ -1,6 +1,14 @@
 import './SiteInicio.css';
+import { useState } from 'react';
+//import RecipePage from './Receita.tsx';
 
 const SiteInicio = () => {
+
+    //const [receitaId, setReceitaId] = useState(-1);
+
+    // const handleReceitaClick = (id) => {
+    //    setReceitaId(id);
+    //};
     return (
         <> 
         <div className="logo">
@@ -100,17 +108,21 @@ const SiteInicio = () => {
             <main>
                 <section className="receitas">
                     <div className="receita1">
-                        <img src="src/assets/bolo-de-chocolate.png"></img>
+                        <a href="/RecipePage">
+                        <img src="src/assets/bolo-de-chocolate.png" alt="Bolo de Cenoura" onClick={() => handleReceitaClick(1)}/></a>
+                    
                     </div>
                     <div className="receita2">
-                        <img src="src/assets/pao-de-queijo.png"/>
+                    <a href="/RecipePage">
+                        <img src="src/assets/pao-de-queijo.png" alt="Pão de Queijo" onClick={() => handleReceitaClick(2)}/></a>
                     </div>
                     <div className="receita3">
-                        <img src="src/assets/torta-de-frango.png"/>
+                    <a href="/RecipePage">
+                        <img src="src/assets/torta-de-frango.png" alt="Torta de Frango" onClick={() => handleReceitaClick(3)}/></a>
                     </div>
                     <div className="receita4">
-                        <img src="src/assets/pizza-caseira.png"/>
-
+                    <a href="/RecipePage">
+                        <img src="src/assets/pizza-caseira.png" alt="Pizza Caseira" onClick={() => handleReceitaClick(4)}/></a>
                     </div>
                 </section>
             </main>
